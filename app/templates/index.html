@@ -5,25 +5,27 @@
     <title>A Contact Book</title>
     <style>
         .button {
+            border-radius: 40px;
             display: flex;
-            outline: 3px solid black;
             height: 50px;
-            width: 200px;
+            width: 130px;
             margin-top: 20px;
             justify-content: center;
+            align-items: center;
+            margin-top: 5px;
         }
         .button-text{
             color: white;
             font-family: 'Arial';
-            margin-top: 20px;
+            text-decoration: none;
         }
         .account-options{
             outline: 2px solid black;
-            background-color: gray;
+            background: linear-gradient(to bottom right, #800080, #D8BFD8);
         }
         .account-value{
             outline: 2px solid black;
-            background-color: white;
+            background: linear-gradient(to top right, #0D61B0, #D8BFD8);
         }
         .blue-bg{
             background-color: blue;
@@ -88,13 +90,11 @@
     </div>
 
     <div class="buttons">
-        <ul>
-            <li class="button red-bg"><a class="button-text" href="">New Contact</a></li>
-            <li class="button blue-bg"><a class="button-text" href="">Edit Contact</a></li>
-            <li class="button green-bg"><a class="button-text" href="">Delete Contact</a></li>
-            <li class="button yellow-bg"><a class="button-text black" href="">Contact Info</a></li>
-            <li class="button red-bg"><a class="button-text" href="">Display</a></li>
-        </ul>
+        <div class="button red-bg"><a class="button-text" href="">New Contact</a></div>
+        <div class="button blue-bg"><a class="button-text" href="">Edit Contact</a></div>
+        <div class="button green-bg"><a class="button-text" href="">Delete Contact</a></div>
+        <div class="button yellow-bg"><a class="button-text black" href="">Contact Info</a></div>
+        <div class="button red-bg"><a class="button-text" href="">Display</a></div>
     </div>
 </body>
 </html>
