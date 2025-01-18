@@ -3,6 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>A Contact Book</title>
+    <style>
+        .button {
+            display: flex;
+            outline: 3px solid black;
+            height: 50px;
+            width: 200px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .button-text{
+            color: white;
+            font-family: 'Arial';
+            margin-top: 20px;
+        }
+        .account-options{
+            outline: 2px solid black;
+            background-color: gray;
+        }
+        .account-value{
+            outline: 2px solid black;
+            background-color: white;
+        }
+        .blue-bg{
+            background-color: blue;
+        }
+        .red-bg{
+            background-color: red;
+        }
+        .green-bg{
+            background-color: green;
+        }
+        .yellow-bg{
+            background-color: yellow;
+        }
+        .blue{
+            color: blue;
+        }
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .black{
+            color: black;
+        }
+        .white{
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <h1>A Contacts Book</h1>
@@ -11,24 +64,24 @@
         <table>
             <thead>
                 <tr>
-                    <th>Photo</th>
-                    <th>ID</th>
-                    <th>First name</th>
-                    <th>Last name</th>
-                    <th>Phone number</th>
-                    <th>E-Mail</th>
-                    <th>Nationality</th>
+                    <th class="account-options">Photo</th>
+                    <th class="account-options">ID</th>
+                    <th class="account-options">First name</th>
+                    <th class="account-options">Last name</th>
+                    <th class="account-options">Phone number</th>
+                    <th class="account-options">E-Mail</th>
+                    <th class="account-options">Nationality</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>dancing_cat.jpg</td>
-                    <td>-99</td>
-                    <td>Lionel</td>
-                    <td>Ronaldo</td>
-                    <td>+380123456789</td>
-                    <td>randomniy@email.com</td>
-                    <td>DPRK</td>
+                    <td class="account-value">dancing_cat.jpg</td>
+                    <td class="account-value">-99</td>
+                    <td class="account-value">Lionel</td>
+                    <td class="account-value">Ronaldo</td>
+                    <td class="account-value">+380123456789</td>
+                    <td class="account-value">randomniy@email.com</td>
+                    <td class="account-value">DPRK</td>
                 </tr>
             </tbody>
         </table>
@@ -36,11 +89,11 @@
 
     <div class="buttons">
         <ul>
-            <li><a href="">New Contact</a></li>
-            <li><a href="">Edit Contact</a></li>
-            <li><a href="">Delete Contact</a></li>
-            <li><a href="">Contact Info</a></li>
-            <li><a href="">Display</a></li>
+            <li class="button red-bg"><a class="button-text" href="">New Contact</a></li>
+            <li class="button blue-bg"><a class="button-text" href="">Edit Contact</a></li>
+            <li class="button green-bg"><a class="button-text" href="">Delete Contact</a></li>
+            <li class="button yellow-bg"><a class="button-text black" href="">Contact Info</a></li>
+            <li class="button red-bg"><a class="button-text" href="">Display</a></li>
         </ul>
     </div>
 </body>
