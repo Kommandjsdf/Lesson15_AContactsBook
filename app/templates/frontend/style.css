@@ -1,11 +1,53 @@
-.container-header {
-    color: blue;
-}
-
-h1 {
-    color: red;
-}
-
-#search {
-
-}
+            .button {
+                border-radius: 40px;
+                display: flex;
+                height: 50px;
+                width: 130px;
+                margin-top: 20px;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5px;
+            }
+            .button-text{
+                color: white;
+                font-family: 'Arial';
+                text-decoration: none;
+            }
+            .account-options{
+                outline: 2px solid black;
+                background: linear-gradient(to bottom right, #800080, #D8BFD8);
+            }
+            .account-value{
+                outline: 2px solid black;
+                background: linear-gradient(to top right, #0D61B0, #D8BFD8);
+            }
+            .blue-bg{
+                background-color: blue;
+            }
+            .red-bg{
+                background-color: red;
+            }
+            .green-bg{
+                background-color: green;
+            }
+            .yellow-bg{
+                background-color: yellow;
+            }
+            .blue{
+                color: blue;
+            }
+            .red{
+                color: red;
+            }
+            .green{
+                color: green;
+            }
+            .yellow{
+                color: yellow;
+            }
+            .black{
+                color: black;
+            }
+            .white{
+                color: white;
+            }
