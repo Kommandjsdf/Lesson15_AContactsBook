@@ -2,99 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>A Contact Book</title>
-    <style>
-        .button {
-            border-radius: 40px;
-            display: flex;
-            height: 50px;
-            width: 130px;
-            margin-top: 20px;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5px;
-        }
-        .button-text{
-            color: white;
-            font-family: 'Arial';
-            text-decoration: none;
-        }
-        .account-options{
-            outline: 2px solid black;
-            background: linear-gradient(to bottom right, #800080, #D8BFD8);
-        }
-        .account-value{
-            outline: 2px solid black;
-            background: linear-gradient(to top right, #0D61B0, #D8BFD8);
-        }
-        .blue-bg{
-            background-color: blue;
-        }
-        .red-bg{
-            background-color: red;
-        }
-        .green-bg{
-            background-color: green;
-        }
-        .yellow-bg{
-            background-color: yellow;
-        }
-        .blue{
-            color: blue;
-        }
-        .red{
-            color: red;
-        }
-        .green{
-            color: green;
-        }
-        .yellow{
-            color: yellow;
-        }
-        .black{
-            color: black;
-        }
-        .white{
-            color: white;
-        }
-    </style>
+    <title>A Contact`s Book</title>
 </head>
 <body>
-    <h1>A Contacts Book</h1>
+    <h1>A Contact`s Book</h1>
 
-    <div class="contacts_table">
+    <div class="table_contacts">
         <table>
             <thead>
                 <tr>
-                    <th class="account-options">Photo</th>
-                    <th class="account-options">ID</th>
-                    <th class="account-options">First name</th>
-                    <th class="account-options">Last name</th>
-                    <th class="account-options">Phone number</th>
-                    <th class="account-options">E-Mail</th>
-                    <th class="account-options">Nationality</th>
+                    <th>id</th>
+                    <th>Photo</th>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td class="account-value">dancing_cat.jpg</td>
-                    <td class="account-value">-99</td>
-                    <td class="account-value">Elon</td>
-                    <td class="account-value">Musk</td>
-                    <td class="account-value">+380123456789</td>
-                    <td class="account-value">randomniy@email.com</td>
-                    <td class="account-value">DPRK (North Korea)</td>
+                    <td>1</td>
+                    <td>img</td>
+                    <td>Name</td>
+                    <td>Name</td>
+                    <td>+3802345678</td>
+                    <td>3456789@gmail.com</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
     <div class="buttons">
-        <div class="button red-bg"><a class="button-text" href="">New Contact</a></div>
-        <div class="button blue-bg"><a class="button-text" href="">Edit Contact</a></div>
-        <div class="button green-bg"><a class="button-text" href="">Delete Contact</a></div>
-        <div class="button yellow-bg"><a class="button-text black" href="">Contact Info</a></div>
-        <div class="button red-bg"><a class="button-text" href="">Display</a></div>
+        <ul>
+            <li><a href="">New contact</a></li>
+            <li><a href="">Edit contact</a></li>
+            <li><a href="">Delete contact</a></li>
+            <li><a href="">About contact</a></li>
+            <li><a href="">Display</a></li>
+        </ul>
     </div>
 </body>
 </html>
