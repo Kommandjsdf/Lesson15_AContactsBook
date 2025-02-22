@@ -6,7 +6,7 @@
 }
 
 .contacts-table {
-    flex: 3;
+    flex: 2;
     overflow-y: auto;
 }
 
@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     padding: 20px;
     background-color: #f8f9fa;
@@ -22,6 +23,7 @@
 }
 
 .action-buttons a {
+    border: 2px solid black;
     display: flex;
     height: 50px;
     text-align: center;
