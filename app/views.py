@@ -12,8 +12,10 @@ def add_contact(request):
         if form.is_valid():
             form.save()
             return redirect('contact_list')
+        else:
+            return render(request, 'contact_form.html', {'form':form})
     else:
         form = ContactsForm()
-        return render(request, 'contact_form.html')
+        return render(request, 'contact_form.html', {'form':form})
 
 # Create your views here.

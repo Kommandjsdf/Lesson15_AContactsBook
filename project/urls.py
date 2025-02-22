@@ -22,4 +22,5 @@ from app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.contact_list, name='contact_list'),
+    path('add_contact/', views.add_contact, name='add_contact'),
 ]
