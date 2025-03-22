@@ -19,13 +19,9 @@
             <tbody>
                 {% for contact in contacts %}
                 <tr class="table-element">
-                    <td>
-                        {% if contact.photo %}
-                        <img src="{{ contact.photo.url }}" alt="Contact's photo" width="50">
-                        {% else %}
-                        <img src="/media/icon.jpg" alt="Contact's alt" width="50">
-                        {% endif %}
-                    </td>
+<!--                    <td>-->
+<!--                        <img src="{{ contact.photo.url }}" alt="Contact's photo" width="50">-->
+<!--                    </td>-->
                     <td>{{ contact.first_name }}</td>
                     <td>{{ contact.last_name }}</td>
                     <td>{{ contact.phone_number }}</td>
@@ -33,14 +29,14 @@
                 </tr>
                 {% endfor %}
             </tbody>
-            <tbody>
-                <tr class="table-element">
-                    <td><img src="/media/icon.jpg" alt="Contact's alt" width="50"></td>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>+123456789</td>
-                    <td>johndoe@example.com</td>
-                </tr>
+<!--            <tbody>-->
+<!--                <tr class="table-element">-->
+<!--                    <td><img src="/media/icon.jpg" alt="Contact's alt" width="50"></td>-->
+<!--                    <td>John</td>-->
+<!--                    <td>Doe</td>-->
+<!--                    <td>+123456789</td>-->
+<!--                    <td>johndoe@example.com</td>-->
+<!--                </tr>-->
 <!--                <tr>-->
 <!--                    <td><img src="/media/icon.jpg" alt="Contact's alt" width="50"></td>-->
 <!--                    <td>Jane</td>-->
@@ -49,7 +45,7 @@
 <!--                    <td>janesmith@example.com</td>-->
 <!--                </tr>-->
 <!--&lt;!&ndash;                &lt;!&ndash; Add more rows as needed &ndash;&gt;&ndash;&gt;-->
-            </tbody>
+<!--            </tbody>-->
         </table>
     </div>
 
