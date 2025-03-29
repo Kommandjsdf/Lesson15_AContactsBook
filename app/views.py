@@ -18,4 +18,8 @@ def add_contact(request):
         form = ContactsForm()
         return render(request, 'contact_form.html', {'form':form})
 
+def about_contact(request, c_id):
+    contact = Contact.objects.get(id=c_id)
+    return render(request, 'about_contact.html', {'contact':contact})
+
 # Create your views here.
