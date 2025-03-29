@@ -18,7 +18,7 @@
             </thead>
             <tbody>
                 {% for contact in contacts %}
-                <tr class="table-element">
+                <tr class="table-element" data-contact-id="{{ contact.id }}">
                     <td>
                         <img src="{{ contact.photo.url }}" alt="Contact's photo" width="50">
                     </td>
@@ -29,30 +29,13 @@
                 </tr>
                 {% endfor %}
             </tbody>
-<!--            <tbody>-->
-<!--                <tr class="table-element">-->
-<!--                    <td><img src="/media/icon.jpg" alt="Contact's alt" width="50"></td>-->
-<!--                    <td>John</td>-->
-<!--                    <td>Doe</td>-->
-<!--                    <td>+123456789</td>-->
-<!--                    <td>johndoe@example.com</td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                    <td><img src="/media/icon.jpg" alt="Contact's alt" width="50"></td>-->
-<!--                    <td>Jane</td>-->
-<!--                    <td>Smith</td>-->
-<!--                    <td>+987654321</td>-->
-<!--                    <td>janesmith@example.com</td>-->
-<!--                </tr>-->
-<!--&lt;!&ndash;                &lt;!&ndash; Add more rows as needed &ndash;&gt;&ndash;&gt;-->
-<!--            </tbody>-->
         </table>
     </div>
 
     <!-- Right section: Action Buttons -->
     <div class="action-buttons">
         <a href="add_contact" class="btn btn-primary">New Contact</a>
-        <a href="#" class="btn btn-secondary">Edit Contact</a>
+        <a href="#" class="btn btn-secondary" id="editButton">Edit Contact</a>
         <a href="#" class="btn btn-danger">Delete Contact</a>
         <a href="about_contact" class="btn btn-info">About Contact</a>
         <a href="#" class="btn btn-success">Display</a>

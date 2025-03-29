@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+{% load django-bootstrap5 %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +16,8 @@
     <div class="container-fluid main-container">
         {% block content %}{% endblock %}
     </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
 
 </body>
 </html>
